@@ -20,7 +20,6 @@ body{
   padding:20px;
 }
 
-/* Center card */
 .center-card{
   text-align:center;
   background:var(--card);
@@ -45,7 +44,6 @@ body{
   color:var(--muted);
 }
 
-/* Boxes */
 .box{
   position:absolute;
   background:#fff;
@@ -64,7 +62,6 @@ body{
   box-shadow:0 14px 30px rgba(0,0,0,0.18);
 }
 
-/* Layout around card */
 .about{
   top:10%;
   left:50%;
@@ -89,7 +86,6 @@ body{
   transform:translateX(-50%);
 }
 
-/* Mobile layout */
 @media(max-width:850px){
   body{
     flex-direction:column;
@@ -111,7 +107,7 @@ body{
   }
 }
 
-/* Modal */
+/* FINAL FIXED MODAL */
 .modal{
   display:none;
   position:fixed;
@@ -129,7 +125,6 @@ body{
   position:absolute;
   inset:0;
   background:rgba(0,0,0,0.25);
-  backdrop-filter:blur(2px);
 }
 
 .modal-card{
@@ -163,7 +158,6 @@ body{
   color:#444;
 }
 
-/* Modal content */
 .modal-content h2{
   margin:0 0 8px;
   font-size:20px;
