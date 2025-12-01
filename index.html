@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Neha Sharma | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="grid"></div>
+  <main class="page">
+    <div class="center-card">
+      <h1>Neha Sharma</h1>
+      <p class="subtitle">Choose where to go</p>
+    </div>
 
-  <div class="center-card">
-    <h1>Neha Sharma</h1>
-    <p>Choose where to go</p>
-  </div>
+    <button class="box btn about" data-target="about">About Me</button>
+    <button class="box btn projects" data-target="projects">Projects</button>
+    <button class="box btn skills" data-target="skills">Skills</button>
+    <button class="box btn contact" data-target="contact">Contact</button>
 
-  <div class="nav about">About Me</div>
-  <div class="nav projects">Projects</div>
-  <div class="nav skills">Skills</div>
-  <div class="nav contact">Contact</div>
-  <div class="nav resume">Resume</div>
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true">
+        <button id="closeModal" class="close">×</button>
+        <div id="modalContent" class="modal-content"></div>
+      </div>
+      <div id="overlay" class="overlay"></div>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
